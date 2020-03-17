@@ -1,0 +1,32 @@
+* { font-family: Tahoma }
+
+body {
+  margin: 5em 10em 5em 10em;
+  background-image: url(img/books.png); background-repeat: repeat-y;
+}
+
+p { text-align: justify }
+
+p:first-of-type { font-style: italic }
+
+li { list-style-type: square }
+
+#cena {
+  color: red;
+  font-weight: bold;
+}
+
+td img {
+  border-style: solid;
+  border-color: blue;
+}
+
+td img:hover { border-color: red; }
+
+h1 + h2 { letter-spacing: 5px }
+
+td[colspan="2"] p { font-size: small }
+
+p + p { color: gray }
+
+h1 { color: green }
