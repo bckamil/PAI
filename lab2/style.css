@@ -1,0 +1,141 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Verdana";
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color:black;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-title {
+    margin-left: 15px;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 2;
+    align-self: flex-start;
+    justify-content: flex-end;
+    display: flex;
+}
+
+header a {
+    width: 75px;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    border: solid 5px black;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+#logo-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+article {
+    margin: 15px;
+    width: 100%;
+    border: solid 2px black;
+    flex-direction: column;
+}
+
+.article-header {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.article-title {
+    height: 50px;
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    font-size: 1.5em;
+    background-color: lightgray;
+    border: solid 2px black;
+}
+
+article p {
+    text-align: justify;
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-top: black 2px solid;
+    margin-top: 15px;
+    background-color: lightgray;
+    flex-direction: column;
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.menu-icon {
+    justify-content: flex-end;
+    display: none;
+    padding: 10px;
+}
+
+.menu-icon div {
+    width: 65px;
+    height: 8px;
+    background-color: black;
+    border: solid 2px black;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+    }
+    #header-title {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
