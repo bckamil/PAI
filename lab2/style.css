@@ -91,6 +91,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: black 2px solid;
+    margin-top: 15px;
     background-color: lightgray;
     flex-direction: column;
 }
@@ -101,9 +102,8 @@ html, body{
 
 .content {
     min-height: 100%;
-    margin-bottom: -50px;
+    margin-bottom: -65px;
 }
-
 
 footer,
 .push {
