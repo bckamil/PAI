@@ -34,7 +34,7 @@ class WebScraper {
   }
 
   getLink() {
-    return this.shopPaginationLinks.shift()
+    return this.shopPaginationLinks.shift();
   }
 
   addProducts(html) {
@@ -43,7 +43,7 @@ class WebScraper {
       let name = $('.abs-product-name', products[index]).text().trim().replace(/\s\s+/g, ' ');
       let details = $('.abs-col-details-description-attributes .list-group-item', products[index]);
 
-      let capacityValue
+      let capacityValue;
       for (let index = 0; index < details.length; index++) {
         if ($('.abs-list-label', details[index]).text() === 'Poj.:') {
           capacityValue = $('.abs-list-value', details[index]).text().replace(',', '.');
@@ -64,7 +64,7 @@ class WebScraper {
         unitPrice: price / (capacityValue / 100)
       }
 
-      this.shopProducts.push(product)
+      this.shopProducts.push(product);
     }
   }
 
@@ -93,7 +93,7 @@ class WebScraper {
         this.setPaginationLinks(html);
       })
       .catch(err => {
-        console.log(err)
+        console.log(err);
       })
 
     while (true) {
@@ -111,9 +111,9 @@ class WebScraper {
       }
     }
 
-    this.showResults()
+    this.showResults();
   }
 }
 
-ws = new WebScraper(url)
-ws.start()
+ws = new WebScraper(url);
+ws.start();
