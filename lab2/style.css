@@ -96,12 +96,16 @@ footer {
     flex-direction: column;
 }
 
-.content {
-    min-height: 100%;
-    margin-bottom: -50px;
+html, body{
+    height: 100%;
 }
 
-.footer,
+.content {
+    min-height: 100%;
+    margin-bottom: -65px;
+}
+
+footer,
 .push {
   height: 50px;
 }
