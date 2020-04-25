@@ -17,4 +17,6 @@ KONIEC;
 if (isset($_SESSION["MYSQL_ERROR"])) {
     echo "Query failed: " . $_SESSION["MYSQL_ERROR"];
 }
+
+session_unset();
 ?>
